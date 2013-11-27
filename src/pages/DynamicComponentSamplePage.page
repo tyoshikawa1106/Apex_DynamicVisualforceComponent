@@ -1,7 +1,0 @@
-<apex:page Controller="DynamicComponentSampleController" id="page">
-	<apex:sectionHeader title="Force.com" subTitle="Dynamic Component Sample" />
-	<apex:form id="form">
-		<apex:pageMessages id="msg"/>
-		<apex:dynamicComponent componentValue="{!DynamicPageBlock}"/>
-	</apex:form>
-</apex:page>

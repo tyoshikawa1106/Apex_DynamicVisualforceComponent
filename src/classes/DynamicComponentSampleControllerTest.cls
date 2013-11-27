@@ -1,39 +1,51 @@
-/*
+/**
  * Dynamic Visualforce Component
  * © 2013 Force.com Developer
  * ----------------------------------------
- * @createdDate      : 2013/01/01
- * @createdName      : TAIKI,YOSHIKAWA
- * ----------------------------------------
- * @lastModifiedDate : 2013/01/01
- * @lastModifiedName : TAIKI,YOSHIKAWA
+ * @createdName      : Taiki,Yoshikawa
+ * @lastModifiedName : Taiki,Yoshikawa
  * ----------------------------------------
  */
 @isTest
 private class DynamicComponentSampleControllerTest {
-	
-	/*
-	 * DynamicComponentSampleControllerTest
-	 */
+    
+    /**
+     * DynamicComponentSampleControllerTest
+     */
     static testMethod void DynamicComponentSampleControllerTest() {
+        
+        Test.startTest();
+        
         DynamicComponentSampleController cls = new DynamicComponentSampleController();
+        
+        Test.stopTest();
     }
     
-    /*
-	 * getDynamicPageBlockTest
-	 */
+    /**
+     * getDynamicPageBlockTest
+     */
     static testMethod void getDynamicPageBlockTest() {
+        
+        Test.startTest();
+        
         DynamicComponentSampleController cls = new DynamicComponentSampleController();
         cls.getDynamicPageBlock();
+        
+        Test.stopTest();
     }
     
-    /*
-	 * doSaveTest
-	 */
+    /**
+     * doSaveTest
+     */
     static testMethod void doSaveTest() {
+        
+        Test.startTest();
+        
         DynamicComponentSampleController cls = new DynamicComponentSampleController();
         cls.account.Name = 'Account Name';
         cls.account.AccountNumber = '0000';
         cls.doSave();
+        
+        Test.stopTest();
     }
 }
